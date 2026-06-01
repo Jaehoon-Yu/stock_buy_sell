@@ -1,15 +1,22 @@
 # setting class
 class order:
-    def __init__(self, price, order, ID, time_stamp):
+    def __init__(self, price, side, time_stamp):
         self.price = price
-        self.order = order
-        self.ID = ID
+        self.side = side
         self.time_stamp = time_stamp
 
+#adding order
 class orderbook:
     def __init__(self):
         self.buy = []
         self.sell = []
         
-    self.buy.append({})
+    def add_order(self):
+        if self.side == buy:
+            self.buy.append({})
+            
+        elif self.side == sell:
+            self.sell.append({})
+        
+
         
